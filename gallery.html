@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+            <html lang="en">
+            <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>Rutuja | Gallery</title>
+            <link rel="stylesheet" href="css/base.css" />
+            <link rel="stylesheet" href="css/gallery.css" />
+            </head>
+            <body>
+            <header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">Rutuja</a>
+    
+    <button class="menu-toggle" aria-label="Toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+            <main>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Rutuja Collection</h1>
+      <p class="subheading">Where craftsmanship meets contemporary design</p>
+    </div>
+  </section>
+
+  <!-- Filter Buttons -->
+  <section class="filter-section">
+    <div class="filter-container">
+      <button class="filter-btn active" data-category="all">All Collections</button>
+      <button class="filter-btn" data-category="womenswear">Womenswear</button>
+      <button class="filter-btn" data-category="menswear">Menswear</button>
+      <button class="filter-btn" data-category="accessories">Accessories</button>
+      <button class="filter-btn" data-category="sustainable">Sustainable</button>
+      <button class="filter-btn" data-category="limited">Limited Edition</button>
+    </div>
+  </section>
+
+  <!-- Gallery Grid -->
+  <section class="gallery-container">
+    <div class="masonry-grid">
+      <!-- Item 1 -->
+      <a href="#" class="gallery-item" data-category="womenswear">
+        <img src="images/gallery1.jpg" alt="Silk evening gown collection">
+        <div class="item-overlay">
+          <h3>Ethereal Evenings</h3>
+          <p>Silk gown collection</p>
+        </div>
+      </a>
+      
+      <!-- Item 2 -->
+      <a href="#" class="gallery-item" data-category="menswear">
+        <img src="images/gallery2.jpg" alt="Tailored wool suits">
+        <div class="item-overlay">
+          <h3>Executive Line</h3>
+          <p>Tailored wool suits</p>
+        </div>
+      </a>
+      
+      <!-- 10 more items following same pattern with different categories -->
+      <!-- Item 3-12 would be here in production -->
+    </div>
+    
+    <button class="load-more">Load More</button>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>Worn By Leaders</h2>
+    <div class="client-logos">
+      <i class="ph ph-buildings"></i>
+      <i class="ph ph-film-slate"></i>
+      <i class="ph ph-music-notes"></i>
+      <i class="ph ph-plane"></i>
+    </div>
+    <div class="testimonial-card">
+      <p>"Rutuja's attention to detail is unmatched in the industry."</p>
+      <p class="client-name">— Fashion Editor, Vogue</p>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <h2>Ready for Custom Designs?</h2>
+    <p>Schedule a consultation with our design team</p>
+    <button class="cta-button">Book Appointment</button>
+  </section>
+</main>
+
+<!-- Modal Structure (hidden by default) -->
+<div class="modal" id="gallery-modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <img id="modal-image" src="" alt="">
+    <div class="modal-details">
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+      <p class="collection-info"></p>
+    </div>
+  </div>
+</div>
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/gallery.css">
+<script src="js/base.js"></script>
+<script src="js/gallery.js"></script>
+
+            <footer class="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-logo">Rutuja</div>
+      
+      <div class="footer-links">
+        <ul class="social-links">
+          <li><a href="#" aria-label="Facebook">Facebook</a></li>
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+          <li><a href="#" aria-label="Twitter">Twitter</a></li>
+        </ul>
+        
+        <ul class="contact-info">
+          <li>info@rutuja.com</li>
+          <li>+1 (555) 123-4567</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p>&copy; <span id="year"></span> Rutuja. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+            <script src="js/base.js"></script>
+            <script src="js/gallery.js"></script>
+            </body>
+            </html>
+            
